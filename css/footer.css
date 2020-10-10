@@ -1,8 +1,6 @@
 .footer {
     height: 125px;
-    overflow: hidden;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-    position: relative;
 }
 
 .footer__block {
@@ -11,19 +9,62 @@
     padding-top: 40px;
 }
 
-.footer__block ul>li {
-    padding-left: 230px;
+.footer__block ul li {
     font-size: 18px;
+    padding-left: 230px;
     font-weight: 400;
 }
 
-.footer__block ul>li>a {
+.footer__block ul li a {
     color: #fff;
 }
 
-.footer__square {
-    position: absolute;
-    left: -15px;
-    top: 25px;
-    opacity: 0.3;
+.footer__block ul li a:hover {
+    color: #dadada;
+    transition: 0.2s ease;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    .footer__block ul li {
+        padding-left: 170px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    footer img {
+        margin-left: 40px;
+    }
+
+    .footer__block ul li {
+        padding-left: 100px;
+    }
+
+    .footer__block ul {
+        margin-right: 40px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .footer {
+        height: 95px;
+    }
+
+    footer img {
+        margin-left: 40px;
+    }
+
+    .footer__block {
+        padding-top: 20px;
+    }
+
+    .footer__block ul li {
+        padding-left: 46px;
+    }
+
+    .footer__block ul {
+        margin-right: 40px;
+    }
 }

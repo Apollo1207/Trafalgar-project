@@ -3,50 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Trafalgar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafalgar</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container header__container">
-            <nav class="header__nav">
-                <img src="./images/trafalgar-header-logo.svg" alt="Trafalgar">
-                <ul>
+            <div class="header__menu" onclick="toggleMenu()">
+                <img src="images/menu-burger.png" class="header__menu-burger" alt="Menu icon">
+                <img src="images/trafalgar-footer-logo.svg" class="header__menu-logo" alt="Trafalgar">
+            </div>
+            <nav id="nav-links" class="header__nav">
+                <img src="images/trafalgar-header-logo.svg" class="animate__animated animate__fadeInLeft" alt="Trafalgar">
+                <ul class="animate__animated animate__fadeInRight">
                     <li class="header__nav-item">
-                        <a class="header__nav-main-link" href="">Home</a>
+                        <a class="header__nav-link" href="#header">Home</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="">Find a doctor</a>
+                        <a class="header__nav-link" href="#intro">Find a doctor</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="">Apps</a>
+                        <a class="header__nav-link" href="#about">Apps</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="">Testimonials</a>
+                        <a class="header__nav-link" href="#services">Testimonials</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="">About us</a>
+                        <a class="header__nav-link" href="#footer">About us</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="container intro__container">
-            <div class="intro__inner">
-                <h1>Virtual healthcare<br> for you</h1>
-                <p>Trafalgar provides progressive, and affordable<br>
+            <div class="intro__inner" id="intro">
+                <h1 class="animate__animated animate__fadeInLeft">Virtual healthcare<br> for you</h1>
+                <p class="animate__animated animate__fadeInLeft">Trafalgar provides progressive, and affordable<br>
                     healthcare, accessible on mobile and online<br>
                     for everyone</p>
-                <button class="intro__inner-button">Consult today</button>
+                <button class="intro__inner-button animate__animated animate__fadeInLeft">Consult today</button>
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container about__container">
             <div class="about__inner">
-                <h2 class="about__inner-title">Leading healthcare<br> providers</h2>
+                <h2>Leading healthcare<br>providers</h2>
                 <hr>
                 <p>Trafalgar provides progressive, and affordable<br>healthcare, accessible on mobile and online for<br> everyone. To us, it’s not just work. We take pride<br>
                     in the solutions we deliver</p>
@@ -54,10 +59,10 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container services__container">
             <div class="services__inner">
-                <h2 class="services__inner-title">Our services</h2>
+                <h2>Our services</h2>
                 <hr>
                 <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
             </div>
@@ -98,10 +103,8 @@
             </div>
         </div>
         <button class="services__button">Learn more</button>
-        <img src="./images/trafalgar-square-icon.svg" alt="Square" class="services__square-first">
-        <img src="./images/trafalgar-square-icon.svg" alt="Square" class="services__square-second">
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__container">
             <div class="footer__block">
                 <img src="./images/trafalgar-footer-logo.svg" alt="Trafalgar">
@@ -118,8 +121,9 @@
                 </ul>
             </div>
         </div>
-        <img src="./images/trafalgar-square-icon.svg" alt="Square" class="footer__square">
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

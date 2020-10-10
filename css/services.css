@@ -2,25 +2,21 @@
     text-align: center;
     background: url(../images/wave-center-background.svg) no-repeat left top;
     height: 1250px;
-    position: relative;
 }
 
-.services__container {
-    width: 850px;
-}
-
-.services__inner>p {
+.services__inner p {
     padding-bottom: 80px;
+    width: 850px;
+    margin: 0 auto;
 }
 
-.services .services__block-item>p {
+.services .services__block-item p {
     font-size: 16px;
 }
 
 .services__blocks-top,
 .services__blocks-bottom {
-    display: flex;
-    justify-content: center;
+    display: none;
 }
 
 #emergency_title {
@@ -30,7 +26,6 @@
 #online_title {
     padding-top: 10px;
 }
-
 
 .services__block-item {
     width: 275px;
@@ -42,7 +37,6 @@
     margin-bottom: 37px;
     text-align: left;
     padding: 54px 37px;
-    z-index: 1;
 }
 
 .services__button {
@@ -56,19 +50,82 @@
     color: #fff;
     transition-duration: 0.4s;
     cursor: pointer;
-    padding: 16px 40px;
 }
 
-.services__square-first {
-    position: absolute;
-    left: 1250px;
-    top: 500px;
-    opacity: 0.3;
-    z-index: 0;
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    .services__block-item {
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
 }
 
-.services__square-second {
-    position: absolute;
-    left: 1330px;
-    bottom: -67px;
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .services__inner p {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .services__block-item {
+        margin-left: 0;
+        margin-right: 5px;
+        padding: 27px 19px;
+        margin-bottom: 5px;
+    }
+
+    .services .services__block-item p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .services {
+        height: 2200px;
+    }
+
+    .services .container {
+        padding: 0 40px;
+    }
+
+    .services__inner {
+        margin: 0 auto;
+    }
+
+    .services__inner h2 {
+        margin: 10px 0;
+    }
+
+    .services__inner hr {
+        margin: 15px auto;
+    }
+
+    .services__inner p {
+        width: 60%;
+        margin: 10px auto;
+        padding-bottom: 60px;
+    }
+
+    .services__blocks-top {
+        flex-direction: column;
+
+    }
+
+    .services__blocks-bottom {
+        flex-direction: column;
+    }
+
+    .services__block-item {
+        padding: 27px 19px;
+        margin: 5px auto;
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .services .services__block-item p {
+        font-size: 15px;
+    }
 }
