@@ -1,0 +1,10 @@
+/* globals */
+@import "./global.css";
+
+
+/* sections */
+@import "./header.css";
+@import "./intro.css";
+@import "./about.css";
+@import "./services.css";
+@import "./footer.css";

@@ -1,0 +1,29 @@
+.footer {
+    height: 125px;
+    overflow: hidden;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    position: relative;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer__block ul>li {
+    padding-left: 230px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__block ul>li>a {
+    color: #fff;
+}
+
+.footer__square {
+    position: absolute;
+    left: -15px;
+    top: 25px;
+    opacity: 0.3;
+}
