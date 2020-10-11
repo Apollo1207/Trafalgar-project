@@ -47,7 +47,7 @@
 
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer {
         height: 95px;
     }
@@ -66,5 +66,36 @@
 
     .footer__block ul {
         margin-right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .footer {
+        height: 200px;
+    }
+
+    footer img {
+        margin-left: 0px;
+    }
+
+    .footer__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__block ul {
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__block ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
     }
 }

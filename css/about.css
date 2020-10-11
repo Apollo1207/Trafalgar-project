@@ -10,9 +10,8 @@
 
 .about__inner {
     margin-top: 50px;
-    display: none;
     margin-right: 75px;
-    transition:0.2s ease;
+    transition: 0.2s ease;
 }
 
 .about__inner hr {
@@ -75,7 +74,7 @@
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .about {
         background-size: 53% 53%;
@@ -103,4 +102,13 @@
     .about__inner-button {
         margin: 10px 0;
     }
+}
+
+@media screen and (max-width:576px) {
+
+    .about {
+        background: none;
+        height: 520px;
+    }
+
 }

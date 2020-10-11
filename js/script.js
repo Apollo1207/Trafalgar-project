@@ -20,16 +20,10 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
     });
 });
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 475) {
-        $(".about__inner").css('display', 'block').addClass('animate__animated').addClass('animate__fadeInRight');
-    }
 
-    if ($(window).scrollTop() > 1450) {
-        $(".services__blocks-top").css('display', 'flex').addClass('animate__animated').addClass('animate__fadeInLeft');
-    }
 
-    if ($(window).scrollTop() > 1450) {
-        $(".services__blocks-bottom").css('display', 'flex').addClass('animate__animated').addClass('animate__fadeInRight');
-    }
+$(function() {
+    $("#clickable").click(function() {
+        $(".header__nav").addClass("animate__animated animate__fadeInLeft");
+    });
 });

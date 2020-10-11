@@ -16,7 +16,7 @@
 
 .services__blocks-top,
 .services__blocks-bottom {
-    display: none;
+    display: flex;
 }
 
 #emergency_title {
@@ -81,7 +81,7 @@
 
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .services {
         height: 2200px;
     }
@@ -127,5 +127,11 @@
 
     .services .services__block-item p {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .services {
+        padding-bottom: 150px;
     }
 }
