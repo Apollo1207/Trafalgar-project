@@ -11,9 +11,10 @@
 .about__inner {
     margin-top: 50px;
     margin-right: 75px;
+    transition: 0.2s ease;
 }
 
-.about__inner>hr {
+.about__inner hr {
     margin: 30px 0;
 }
 
@@ -28,5 +29,86 @@
     color: #fff;
     transition-duration: 0.4s;
     cursor: pointer;
-    padding: 16px 40px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+
+    .about {
+        background-size: 55% 55%;
+        background-position: left 0px top 160px;
+    }
+
+    .about__inner {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .about {
+        background-size: 50% 50%;
+        background-position: left 10px top 160px;
+    }
+
+    .about__inner {
+        margin-top: 165px;
+        margin-right: 20px;
+    }
+
+    .about__inner h2 {
+        margin: 10px 0;
+    }
+
+    .about__inner hr {
+        margin: 20px 0;
+    }
+
+    .about__inner p {
+        margin: 10px 0;
+    }
+
+    .about__inner-button {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .about {
+        background-size: 53% 53%;
+        background-position: left 150px top 255px;
+        height: 750px;
+    }
+
+    .about__inner {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about__inner h2 {
+        margin: 10px 0;
+    }
+
+    .about__inner hr {
+        margin: 15px auto;
+    }
+
+    .about__inner p {
+        margin: 10px 0;
+    }
+
+    .about__inner-button {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .about {
+        background: none;
+        height: 520px;
+    }
+
 }
